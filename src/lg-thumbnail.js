@@ -450,7 +450,11 @@
             this.core.$outer.removeClass('lg-has-thumb');
         }
     };
-
+    
+    if ($.fn.lightGallery === undefined) {
+      return;
+    }
+    
     $.fn.lightGallery.modules.Thumbnail = Thumbnail;
 
 })();
